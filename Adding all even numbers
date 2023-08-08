@@ -1,0 +1,23 @@
+#You want to take a list of numbers and 
+#find the sum of all of the even numbers 
+#in the list. Ignore any odd numbers.
+#Task:
+
+#Find the sum of all even integers in a 
+#list of numbers.
+
+
+#Define the length of the array
+n = int(input())
+#define the variable that will add all the even values
+sum = 0
+#Run through the arrays length.
+for i in range(n):
+#Define all the values in the whole array
+    element = int(input())
+#Check is the value we just gave is odd or even
+    if element % 2 == 0:
+#if the value we defined is even, we add them in the sum variable
+        sum += element
+#Print the final sum of all the even numbers
+print(sum)

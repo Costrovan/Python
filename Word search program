@@ -1,0 +1,28 @@
+#first line is defining the function
+
+def search(x,y):
+# Next two lines replace comma (',') and ('.') with spaces
+    x = x.replace(","," ")
+    x = x.replace("."," ")
+    
+#Next line removes all the extra empty spaces
+    x = x.strip()
+    
+#Next line divides the whole lext in a list of words
+    x = x.split()
+    
+#We check each each word in the list if it is a match for ours. we also use lower() to turn them all into lowercase words.
+
+    for i in range(len(x)):
+        if x[i].lower() == y.lower():
+            return ('Word found')
+    return ('Word not found')
+    
+#Above the returns mean that if we find the word then it will return "Word found". if we finish running through the whole list words and none match ours then we return "Word not found"
+
+#We make the input of text and the word.
+text = input()
+word = input()
+
+#Finally we display whatever the function returns
+print(search(text,word))

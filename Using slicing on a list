@@ -1,0 +1,13 @@
+cart = ['lamp', 'candles', 'chair', 'carpet']
+
+#Using slicing without the start index
+print(cart[:3])
+"""
+ Slicing doesn't need to have the starting
+index(if we want to start from the first
+element) or the ending index(if we want 
+to display every element to the end of the
+sequence)
+"""
+#Using slicing without the ending index
+print(cart[2:])

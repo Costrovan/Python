@@ -1,0 +1,11 @@
+print("This Code is for counting the number of words in a sentence")
+sentence = input("")
+print(sentence)
+sentence = sentence.replace("." , " ")
+sentence = sentence.replace("," , " ")
+sentence = sentence.strip()
+words = sentence.split()
+print(len(words))
+
+#strip() removes all the empty white spaced in a string
+#split() transforms the a whole string of characters into a list of words

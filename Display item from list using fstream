@@ -1,0 +1,20 @@
+
+
+'''Select a type of coffee using fstream'''
+#writing a list of types of coffees.
+caffe = ["Unknown","Americano", "Espresso", "Cappuccino","Irish", "Mocha"]
+
+#writing a function coffee. Select a type of coffee
+def coffee(choice):
+ if choice>=0 and choice < len(caffe):
+   print (caffe[choice])
+   print ("")
+# the fstream print function in full use
+   print (f"You have chosen an {caffe[choice]} coffee")
+ else:
+   print ("Does not exist")
+ 
+# choose your number to input. the item from list with that number will be desplayed   
+choice = int(input())
+# calling the function to run using the "choice" variable used for input()
+coffee(choice)

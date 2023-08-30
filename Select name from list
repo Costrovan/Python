@@ -1,0 +1,12 @@
+games = ["Alien Shooter", "Tic Tac Toe", "Snake", "Puzzle", "Football"]
+
+#define the run function
+def run(games, choice):
+    if choice >= 0 and choice <= len(games):
+        print(games[choice])
+    else:
+        print("Unknown. Item in list.")
+
+print(games)
+print("")
+run(games, int(input()))

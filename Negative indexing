@@ -1,0 +1,7 @@
+animals =["cat", "dog", "bird", "cow"]
+print(animals[-1]) # Last element
+print(animals[-2]) # Second last element
+print(animals[-3:]) # Last 3 elements
+print(animals[-3:-1])
+
+# This is "negative indexing" [-4] is "cat". [-1] is "cow".
